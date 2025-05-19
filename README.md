@@ -16,19 +16,16 @@ Rather than calculating distance using a formula, we focus on analyzing the corr
 3. Collect and average multiple RSSI readings per distance
 4. Record the results in a table for analysis
 
-> **No distance estimation formula** was used (e.g., `distance = 10^((TxPower - RSSI)/(10 * n))`)  
-> Instead, we examine how RSSI changes with physical distance.
+## RSSI vs. Estimated Distance Table
 
-## Results (Example)
-
-| Distance (m) | RSSI 1 | RSSI 2 | RSSI 3 | Avg RSSI (dBm) |
-|--------------|--------|--------|--------|----------------|
-| 0.5          | -52    | -53    | -51    | -52.0          |
-| 1.0          | -58    | -59    | -57    | -58.0          |
-| 2.0          | -66    | -65    | -67    | -66.0          |
-| 3.0          | -73    | -72    | -74    | -73.0          |
-
-See the bar chart in `/charts/ble_distance_graph.png`
+| Measurement No. | RSSI (dBm) | Estimated Distance (m) |
+|------------------|------------|--------------------------|
+| 1                | -72        | 1.18                     |
+| 2                | -72        | 1.18                     |
+| 3                | -80        | 2.28                     |
+| 4                | -80        | 2.28                     |
+| 5                | -84        | 3.16                     |
+| 6                | -83        | 2.91                     |
 
 ## Analysis
 - RSSI values decreased consistently as distance increased.
