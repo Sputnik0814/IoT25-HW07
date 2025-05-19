@@ -34,6 +34,9 @@ We observe how the estimated distance changes with varying RSSI values and physi
 | 5                | -84        | 3.16                     |
 | 6                | -83        | 2.91                     |
 
+![output](https://github.com/user-attachments/assets/f5cc3a1d-eebd-483a-85c4-efd07f527369)
+
+
 ## Analysis
 - RSSI values decrease consistently as the distance increases.
 - Some signal fluctuations were observed, likely due to interference and reflection in the indoor environment.
